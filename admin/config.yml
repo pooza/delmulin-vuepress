@@ -1,0 +1,5 @@
+collections:
+  - name: collections
+    folder: collections
+    slug: {{year}}-{{month}}-{{slug}}
+    preview_path: blog/{{slug}}
