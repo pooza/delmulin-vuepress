@@ -1,16 +1,6 @@
 const { title, description } = require('../../package')
 const sidebar = [
   ['/', 'HOME'],
-  {
-    title: 'BOT',
-    path: '/bot/',
-    sidebarDepth: 1,
-    children: [
-      ['あくまのめだま'],
-      'ボット設置のガイドライン',
-      '稼働中のボット一覧',
-    ]
-  },
 ]
 
 module.exports = {
