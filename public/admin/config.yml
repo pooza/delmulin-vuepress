@@ -3,10 +3,23 @@ backend:
   branch: main
 locale: ja
 collections:
-  - name: collections
-    folder: collections
+  - name: pages
+    label: Pages
+    folder: dist
+    create: true
     slug: {{year}}-{{month}}-{{slug}}
-    preview_path: collections/{{slug}}
+    autoFilename: true
+    preview_path: dist/{{year}}/{{month}}/{{title}}.html
+    defaultperations: '/resize/800x600/'
+    editor:
+      preview: true
+    fields:
+      - {name: title, widget: string}
+      - {name: layout, widget: select, options: ['grid', 'full-width', 'about', 'contact']}
+      - {label: "categories", name: "categories", widget: "list"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: false}
 preview_context: deploy-preview
 show_preview_links: true
 display_url: https://darling-kringle-0ef8d2.netlify.app
