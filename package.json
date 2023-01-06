@@ -5,8 +5,8 @@
   "description": "",
   "main": "index.js",
   "authors": {
-    "name": "",
-    "email": ""
+    "name": "pooza",
+    "email": "pooza@b-shock.org"
   },
   "repository": "/delmulin-vuepress",
   "scripts": {
