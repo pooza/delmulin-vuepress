@@ -1,12 +1,12 @@
 backend:
   name: git-gateway
   branch: main
-locale: en
+locale: ja
 collections:
   - name: news
     folder: news
     slug: {{year}}-{{month}}-{{slug}}
-    preview_path: blog/{{slug}}
+    preview_path: news/{{slug}}
 preview_context: deploy-preview
 show_preview_links: true
 display_url: https://darling-kringle-0ef8d2.netlify.app
