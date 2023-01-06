@@ -3,8 +3,8 @@ backend:
   branch: master
 locale: en
 collections:
-  - name: collections
-    folder: collections
+  - name: news
+    folder: news
     slug: {{year}}-{{month}}-{{slug}}
     preview_path: blog/{{slug}}
 preview_context: deploy-preview
