@@ -3,3 +3,6 @@ collections:
     folder: collections
     slug: {{year}}-{{month}}-{{slug}}
     preview_path: blog/{{slug}}
+preview_context: deploy-preview
+show_preview_links: true
+display_url: https://darling-kringle-0ef8d2.netlify.app/
